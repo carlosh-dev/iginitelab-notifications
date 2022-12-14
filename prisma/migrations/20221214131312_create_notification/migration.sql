@@ -5,7 +5,7 @@ CREATE TABLE "Notification" (
     "content" TEXT NOT NULL,
     "category" TEXT NOT NULL,
     "readAt" DATETIME,
-    "createat" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 -- CreateIndex
