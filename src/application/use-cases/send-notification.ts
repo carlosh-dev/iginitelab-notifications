@@ -3,7 +3,7 @@ import { Content } from "../entities/content";
 import { Notification } from "../entities/notification";
 import { NotificationsRepository } from "../repositories/notifications-repository";
 
-interface SendNoptificationRequest {
+interface SendNotificationRequest {
   recipientId: string;
   content: string;
   category: string;
@@ -19,7 +19,7 @@ export class SendNotification {
 
   }
   async execute(
-    request: SendNoptificationRequest
+    request: SendNotificationRequest
   ): Promise<SendNotificationResponse> {
     const { recipientId, content, category } = request
 
